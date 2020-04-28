@@ -2,10 +2,30 @@
   "name": "pointcloudviz",
   "version": "1.0.0",
   "description": "A visualizer for pointclouds",
-  "main": "index.js",
+  "main": "./lib/PointCloudViz.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "author": "Emily Kauffman",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "path": "^0.12.7",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "regl-worldview": "^0.6.1",
+    "roslib": "^1.1.0",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.11"
+  }
 }
